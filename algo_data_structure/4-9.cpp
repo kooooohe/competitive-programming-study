@@ -20,6 +20,7 @@ bool func(int i, int w, const vector<int> &a) {
 	}
 	return false;
 }
+
 int main() {
 	int N, W;
 	cin >> N >> W;
