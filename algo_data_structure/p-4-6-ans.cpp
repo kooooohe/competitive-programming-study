@@ -35,7 +35,7 @@ int main() {
 		cin >> a[i];
 	}
 
-	if (func(N,W,a)) {
+	if (func(N,W,a) == 1) {
 		cout << "Yes" << endl;
 	} else {
 		cout << "No" << endl;
