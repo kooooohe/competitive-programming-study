@@ -33,8 +33,8 @@ int main() {
     }
   }
 
-  //cout << max(max(dp[N-1][0], dp[N-1][1]), dp[N-1][2]) << endl;
-  cout << dp[N-1][0] << endl;
-  cout << dp[N-1][1] << endl;
-  cout << dp[N-1][2] << endl;
+  cout << max(max(dp[N-1][0], dp[N-1][1]), dp[N-1][2]) << endl;
+  // cout << dp[N-1][0] << endl;
+  // cout << dp[N-1][1] << endl;
+  // cout << dp[N-1][2] << endl;
 }
