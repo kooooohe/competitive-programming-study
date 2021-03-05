@@ -34,8 +34,19 @@ int main() {
 
   vector<vector<double>> dp(N + 1, vector<double>(M + 1));
 
-  for (int i = 0; i < N; ++i) {
+  for (int i = 0; i <= N; ++i) {
     for (int j = 0; j < i; ++j) {
+      for (int k = 1; k <= M; ++k) {
+        if (k > i) {
+          break;
+        }
+        chmax(dp[i][k], dp[j][k - 1] + c[j][i]);
+      }
     }
   }
+  double res = -1;
+  for (int i = 0; i <= M; ++i) {
+    chmax(res, dp[N][i]);
+  }
+  cout << res << endl;
 }
