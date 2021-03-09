@@ -44,6 +44,15 @@ int main() {
       }
     }
   }
+
+      cout << endl;
+  for (int i = 0; i <= N; ++i) {
+    for (int j = 0; j <= M; ++j) {
+      cout << dp[i][j] << " ";
+    }
+      cout << endl;
+  }
+      cout << endl;
   double res = -1;
   for (int i = 0; i <= M; ++i) {
     chmax(res, dp[N][i]);
