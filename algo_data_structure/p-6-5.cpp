@@ -4,7 +4,7 @@
 
 using namespace std;
 
-const long long INF = 1LL << 50;
+const long long INF = 1LL << 60;
 int main() {
 
   int N, M;
