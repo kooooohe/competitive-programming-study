@@ -49,6 +49,7 @@ int main() {
     long long num = 0;
     BIT<long long> bit(N * 2 + 10);
     int sum = 0;
+    cout << "mid: " << mid << endl;
     bit.add(sum + geta, 1);
     bit.print();
     for (int i = 0; i < N; ++i) {
@@ -59,6 +60,8 @@ int main() {
         val = -1;
       sum += val;
       num += bit.sum(1, sum + geta);
+      cout << "num: " << num << endl;
+      cout << "sum: " << sum << endl;
       bit.add(sum + geta, 1);
       bit.print();
     }
