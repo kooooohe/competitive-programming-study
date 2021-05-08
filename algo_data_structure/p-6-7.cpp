@@ -3,7 +3,6 @@
 
 using namespace std;
 
-
 template <typename T> struct BIT {
   int n;
   vector<T> bit;
@@ -35,7 +34,7 @@ template <typename T> struct BIT {
 };
 
 int main() {
-  int N;
+  long long N;
   cin >> N;
   vector<int> a(N);
   for (int i = 0; i < N; ++i) {
@@ -56,16 +55,16 @@ int main() {
       } else {
         sum -= 1;
       }
-      bit.debug();
-      num += bit.sum(sum + geta -1);
+      //bit.debug();
+      num += bit.sum(sum + geta - 1);
       bit.add(sum + geta, 1);
     }
-    cout  << endl;
+    //cout << endl;
 
-    if (num >= N*(N+1)/(2*2)) {
-        high = mid;
+    if (num >= (N * (N + 1) / (2 * 2)) + 1) {
+      high = mid;
     } else {
-        low = mid;
+      low = mid;
     }
   }
   cout << high << endl;
